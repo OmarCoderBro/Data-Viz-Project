@@ -1,0 +1,22 @@
+services:
+  redis:
+    image: redis:7-alpine
+    container_name: image-redis
+    ports:
+      - "6379:6379"
+    networks:
+      - image-network
+
+  worker:
+    build: ./ml
+    container_name: image-worker
+    depends_on:
+      - redis
+    volumes:
+      - ./test_images:/app/test_images
+    networks:
+      - image-network
+
+networks:
+  image-network:
+    driver: bridge

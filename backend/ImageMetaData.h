@@ -9,6 +9,7 @@ struct ImageMetadata {
     uintmax_t fileSize;
     int width;
     int height;
+    double aspectRatio;
 };
 
 ImageMetadata extractMetadata(const std::string& path);

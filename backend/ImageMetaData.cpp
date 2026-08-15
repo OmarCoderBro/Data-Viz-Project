@@ -19,9 +19,13 @@ ImageMetadata extractMetadata(const std::string& path) {
     if (!image.empty()) {
         metadata.width = image.cols;
         metadata.height = image.rows;
+    
+        metadata.aspectRatio =
+            static_cast<double>(metadata.width) / metadata.height;
     } else {
         metadata.width = 0;
         metadata.height = 0;
+        metadata.aspectRatio = 0.0;
     }
 
     return metadata;

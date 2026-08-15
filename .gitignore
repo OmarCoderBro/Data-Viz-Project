@@ -1,0 +1,16 @@
+# Python
+ml/venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# C++ / CMake build output
+build/
+
+# OS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
