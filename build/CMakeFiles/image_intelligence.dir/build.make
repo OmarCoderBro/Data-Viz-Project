@@ -114,11 +114,26 @@ CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/omarshatat/Documents/DataVizProject/image-file-intelligence/backend/ImageMetadata.cpp -o CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.s
 
+CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o: CMakeFiles/image_intelligence.dir/flags.make
+CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o: /Users/omarshatat/Documents/DataVizProject/image-file-intelligence/backend/ImageClassifier.cpp
+CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o: CMakeFiles/image_intelligence.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/omarshatat/Documents/DataVizProject/image-file-intelligence/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o -MF CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o.d -o CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o -c /Users/omarshatat/Documents/DataVizProject/image-file-intelligence/backend/ImageClassifier.cpp
+
+CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/omarshatat/Documents/DataVizProject/image-file-intelligence/backend/ImageClassifier.cpp > CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.i
+
+CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/omarshatat/Documents/DataVizProject/image-file-intelligence/backend/ImageClassifier.cpp -o CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.s
+
 # Object files for target image_intelligence
 image_intelligence_OBJECTS = \
 "CMakeFiles/image_intelligence.dir/backend/main.cpp.o" \
 "CMakeFiles/image_intelligence.dir/backend/ImageScanner.cpp.o" \
-"CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.o"
+"CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.o" \
+"CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o"
 
 # External object files for target image_intelligence
 image_intelligence_EXTERNAL_OBJECTS =
@@ -126,6 +141,7 @@ image_intelligence_EXTERNAL_OBJECTS =
 image_intelligence: CMakeFiles/image_intelligence.dir/backend/main.cpp.o
 image_intelligence: CMakeFiles/image_intelligence.dir/backend/ImageScanner.cpp.o
 image_intelligence: CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.o
+image_intelligence: CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o
 image_intelligence: CMakeFiles/image_intelligence.dir/build.make
 image_intelligence: /opt/homebrew/lib/libopencv_stitching.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_alphamat.5.0.0.dylib
@@ -160,6 +176,7 @@ image_intelligence: /opt/homebrew/lib/libopencv_xfeatures2d.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_xobjdetect.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_xphoto.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_xstereo.5.0.0.dylib
+image_intelligence: /Users/omarshatat/vcpkg/installed/arm64-osx/debug/lib/libredis++.a
 image_intelligence: /opt/homebrew/lib/libopencv_ptcloud.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_shape.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_calib.5.0.0.dylib
@@ -184,8 +201,9 @@ image_intelligence: /opt/homebrew/lib/libopencv_ml.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_geometry.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_flann.5.0.0.dylib
 image_intelligence: /opt/homebrew/lib/libopencv_core.5.0.0.dylib
+image_intelligence: /Users/omarshatat/vcpkg/installed/arm64-osx/debug/lib/libhiredisd.a
 image_intelligence: CMakeFiles/image_intelligence.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/omarshatat/Documents/DataVizProject/image-file-intelligence/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable image_intelligence"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/omarshatat/Documents/DataVizProject/image-file-intelligence/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable image_intelligence"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_intelligence.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

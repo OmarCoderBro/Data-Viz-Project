@@ -139,6 +139,12 @@ CMAKE_OSX_DEPLOYMENT_TARGET:STRING=
 // inside the indicated SDK.
 CMAKE_OSX_SYSROOT:STRING=
 
+//Semicolon-separated list of installation prefixes searched by
+// find_package(), find_program(), find_library(), find_file(),
+// and find_path(). Empty by default; intended to be set by the
+// project or the user.
+CMAKE_PREFIX_PATH:UNINITIALIZED=/Users/omarshatat/vcpkg/installed/arm64-osx
+
 //Value Computed by CMake
 CMAKE_PROJECT_COMPAT_VERSION:STATIC=
 
@@ -213,6 +219,11 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 //Path to a program.
 CMAKE_TAPI:FILEPATH=/Library/Developer/CommandLineTools/usr/bin/tapi
 
+//Path to a CMake toolchain file, read early in the CMake run,
+// that specifies the compilers, toolchain utilities, and target-platform
+// information used when cross-compiling.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/Users/omarshatat/vcpkg/scripts/buildsystems/vcpkg.cmake
+
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
@@ -230,6 +241,12 @@ ImageFileIntelligence_SOURCE_DIR:STATIC=/Users/omarshatat/Documents/DataVizProje
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=/opt/homebrew/lib/cmake/opencv5
+
+//The directory containing a CMake configuration file for hiredis.
+hiredis_DIR:PATH=/Users/omarshatat/vcpkg/installed/arm64-osx/share/hiredis
+
+//The directory containing a CMake configuration file for redis++.
+redis++_DIR:PATH=/Users/omarshatat/vcpkg/installed/arm64-osx/share/redis++
 
 
 ########################

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o"
+  "CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o.d"
   "CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.o"
   "CMakeFiles/image_intelligence.dir/backend/ImageMetadata.cpp.o.d"
   "CMakeFiles/image_intelligence.dir/backend/ImageScanner.cpp.o"

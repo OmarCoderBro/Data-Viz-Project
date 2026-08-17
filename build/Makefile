@@ -129,6 +129,30 @@ image_intelligence/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_intelligence.dir/build.make CMakeFiles/image_intelligence.dir/build
 .PHONY : image_intelligence/fast
 
+backend/ImageClassifier.o: backend/ImageClassifier.cpp.o
+.PHONY : backend/ImageClassifier.o
+
+# target to build an object file
+backend/ImageClassifier.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_intelligence.dir/build.make CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.o
+.PHONY : backend/ImageClassifier.cpp.o
+
+backend/ImageClassifier.i: backend/ImageClassifier.cpp.i
+.PHONY : backend/ImageClassifier.i
+
+# target to preprocess a source file
+backend/ImageClassifier.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_intelligence.dir/build.make CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.i
+.PHONY : backend/ImageClassifier.cpp.i
+
+backend/ImageClassifier.s: backend/ImageClassifier.cpp.s
+.PHONY : backend/ImageClassifier.s
+
+# target to generate assembly for a file
+backend/ImageClassifier.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_intelligence.dir/build.make CMakeFiles/image_intelligence.dir/backend/ImageClassifier.cpp.s
+.PHONY : backend/ImageClassifier.cpp.s
+
 backend/ImageMetadata.o: backend/ImageMetadata.cpp.o
 .PHONY : backend/ImageMetadata.o
 
@@ -210,6 +234,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... image_intelligence"
+	@echo "... backend/ImageClassifier.o"
+	@echo "... backend/ImageClassifier.i"
+	@echo "... backend/ImageClassifier.s"
 	@echo "... backend/ImageMetadata.o"
 	@echo "... backend/ImageMetadata.i"
 	@echo "... backend/ImageMetadata.s"
