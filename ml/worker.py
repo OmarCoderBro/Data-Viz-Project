@@ -46,7 +46,12 @@ class ImageWorker:
 
             if job:
                 image_path = job[1]
-                print(self.process_image_json(image_path))
+
+                result = self.process_image_json(image_path)
+
+                self.redis_client.lpush("image_results", result)
+
+                print("Result submitted to Redis.", flush=True)
 
 
 if __name__ == "__main__":

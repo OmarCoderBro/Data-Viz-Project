@@ -1,0 +1,47 @@
+.app {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.app h1 {
+  margin-bottom: 10px;
+}
+
+.app p {
+  color: #666;
+}
+
+input {
+  margin: 30px 0 20px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+.results {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.results h2 {
+  margin-top: 0;
+}
