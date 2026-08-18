@@ -328,18 +328,4 @@ docker compose logs -f worker
 
 ---
 
-## Current MVP Limitation
-
-The frontend currently sends the selected filename as a path to the API. The corresponding image must exist in:
-
-```text id="2yx3zs"
-test_images/
-```
-
-which is mounted inside the worker container at:
-
-```text id="5dgn9z"
-/app/test_images/
-```
-
 Full browser file uploads and persistent object storage are future extensions.
